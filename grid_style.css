@@ -9,11 +9,6 @@
     'menu main main ';
     
 }
-/*
-.grid-container > div {
-    text-align: center;
-}
-*/
 
 .item1 {
     grid-area: nav;
@@ -67,11 +62,3 @@
     width: 500px;
     height: auto;
 }
-
-/*
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-*/
