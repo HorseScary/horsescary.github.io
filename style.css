@@ -15,6 +15,7 @@ body {
 
 .topnav {
     overflow: hidden;
+    
 }
 
 .topnav a {
@@ -43,4 +44,69 @@ body {
 .link:hover {
     color: white;
     font-weight: 600;
+}
+
+.grid-container{
+    display: grid;
+
+    grid-template-columns: 10% auto auto;
+
+    grid-template-areas:
+    'nav nav nav '
+    ' header header header'
+    'menu main main ';
+    
+}
+
+.item1 {
+    grid-area: nav;
+    background-color:#00c217;
+    padding: 0px 10px;
+    text-align: center;
+
+}
+
+.item2 {
+    grid-area: header;
+    text-align: center;
+
+}
+
+.item3 {
+    grid-area: menu;
+    background-color: #00c217;
+    padding: 12px 1px;
+    text-align: center;
+    overflow:hidden;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    align-self: start;
+
+}
+
+.item4 {
+    grid-area:main;
+    text-align: left;
+    padding: 14px 16px
+}
+
+.menuitem{
+    overflow: hidden;
+}
+
+.menuitem a{
+    padding: 14px 16px;
+    color: black;
+}
+
+.menuitem a:hover{
+    background-color: #006408;
+    color: white;
+}
+
+.imega {
+    width: 500px;
+    height: auto;
 }
