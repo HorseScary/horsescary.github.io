@@ -1,9 +1,27 @@
 /* How many fucking stylesheets does one girl need??? */
 
+body {
+    border: 1px black solid;
+    padding: 4vw;
+    margin: 4vw;
+}
+
 .grid-container {
     display: grid;
+    grid-template-areas: 
+    'tit'
+    'foot';
 }
 
 header {
-    
+    grid-area: tit;
+    text-align: center;
+}
+header > h1 {
+    font-size: 15vw;
+    font-family: 'VT323', monospace;
+}
+
+footer {
+    grid-area: foot;
 }
