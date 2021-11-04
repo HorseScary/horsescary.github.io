@@ -4,13 +4,19 @@ body {
     border: 1px black solid;
     padding: 4vw;
     margin: 4vw;
+    background-color: mediumspringgreen;
 }
 
 .grid-container {
     display: grid;
+
     grid-template-areas: 
-    'tit'
-    'foot';
+    'tit tit tit tit tit'
+    'abt you tik tum git'
+    'foot foot foot foot foot';
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+    grid-gap: 1vw
 }
 
 header {
@@ -20,6 +26,28 @@ header {
 header > h1 {
     font-size: 15vw;
     font-family: 'VT323', monospace;
+}
+
+.about {
+    grid-area: abt;
+}
+.youtube {
+    grid-area: you;
+}
+.tiktok {
+    grid-area: tik;
+}
+.tumblr {
+    grid-area: tum;
+}
+.github {
+    grid-area: git;
+}
+
+.about > a, .youtube > a, .tiktok > a, .tumblr > a, .github > a{
+    text-decoration: none;
+    font-size: 2vw;
+    text-align: center;
 }
 
 footer {
