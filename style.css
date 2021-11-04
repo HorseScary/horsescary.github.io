@@ -24,4 +24,37 @@ header > h1 {
 
 footer {
     grid-area: foot;
+    text-align: center;
+    font-size: 1vw;
+}
+footer a {
+    border: 1px solid lightseagreen;
+    border-radius: 5px;
+
+    padding: .2vw;
+    margin: .2vw;
+
+    text-decoration: none;
+
+    background-color: lightseagreen;
+    color: white;
+}
+footer a strong {
+    font-weight: bold;
+
+    padding: 0.1vw;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    background-color: white;
+    color: lightseagreen;
+}
+footer a:hover {
+    background-color: white;
+    color: lightseagreen;
+}
+footer a:hover strong {
+    background-color: lightseagreen;
+    color: white;
 }
