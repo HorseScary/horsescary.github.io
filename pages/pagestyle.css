@@ -1,20 +1,8 @@
-/* How many fucking stylesheets does one girl need??? */
-
 body {
     border: 1px black solid;
     padding: 4vw;
     margin: 4vw;
     background-color: #00fa9a;
-}
-
-.grid-container {
-    display: grid;
-
-    grid-template-areas: 
-    'tit tit tit tit tit'
-    'abt you tik tum git'
-    'foot foot foot foot foot';
-    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
 header {
@@ -27,47 +15,30 @@ header > h1 {
     font-family: 'VT323', monospace;
 }
 
-.about {
-    grid-area: abt;
-}
-.youtube {
-    grid-area: you;
-}
-.tiktok {
-    grid-area: tik;
-}
-.tumblr {
-    grid-area: tum;
-}
-.github {
-    grid-area: git;
-}
-
-.about, .youtube, .tiktok, .tumblr, .github {
-    margin: 1vw;
-
-    font-family: 'Fjalla One', sans-serif;
+.back {
+    grid-area: back;
     text-align: center;
 
-}
-.about > a, .youtube > a, .tiktok > a, .tumblr > a, .github > a {
-    text-decoration: none;
-    font-size: 2vw;
-    color: #024b08;
+    margin-top: 15vh;
+    font-size: 1vw;
+    font-family: 'Fjalla One', sans-serif;
 
-    border: 1px #1db47a solid;
+}
+.back > a {
+    border: 1px solid #20b2aa;
     border-radius: 5px;
-    background-color: #1db47a;
 
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    background-color: #20b2aa;
+    color: #ffffff;
+
+    font-weight: bold;
+    padding: .5vw;
+    text-decoration: none;
 
 }
-.about a:hover, .youtube a:hover, .tiktok a:hover, .tumblr a:hover, .github a:hover {
-    background-color: #024b08;
-    color: #1db47a;
+.back a:hover {
+    background-color: #ffffff;
+    color: #20b2aa;
 }
 
 footer {
@@ -75,7 +46,7 @@ footer {
     text-align: center;
     font-size: 1vw;
 
-    margin-top: 10vh;
+    margin-top: 15vh;
     font-family: 'Fjalla One', sans-serif;
 
 }
