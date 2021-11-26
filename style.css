@@ -9,10 +9,10 @@ body {
 
 .grid-container {
     display: grid;
-
     grid-template-areas: 
     'tit tit tit tit tit'
     'abt you tik tum git'
+    'owo oth oth oth uwu'
     'foot foot foot foot foot';
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
@@ -42,13 +42,33 @@ header > h1 {
 .github {
     grid-area: git;
 }
+.other {
+    grid-area: oth;
+    margin: 3vw;
+
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+}
+.other > a {
+    text-decoration: none;
+    font-size: 2vw;
+    color: #024b08;
+
+    border: 1px solid #1db47a;
+    border-radius: 5px;
+    background-color: #1db47a;
+    
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
 
 .about, .youtube, .tiktok, .tumblr, .github {
     margin: 1vw;
 
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
-
 }
 .about > a, .youtube > a, .tiktok > a, .tumblr > a, .github > a {
     text-decoration: none;
@@ -63,12 +83,13 @@ header > h1 {
     padding-right: 3vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
-
 }
-.about a:hover, .youtube a:hover, .tiktok a:hover, .tumblr a:hover, .github a:hover {
+.about a:hover, .youtube a:hover, .tiktok a:hover, .tumblr a:hover, .github a:hover, .other a:hover {
     background-color: #024b08;
     color: #1db47a;
 }
+
+
 
 footer {
     grid-area: foot;
