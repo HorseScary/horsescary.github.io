@@ -52,10 +52,9 @@ body {
     grid-template-columns: 10% auto auto;
 
     grid-template-areas:
-    'nav nav nav '
-    ' header header header'
-    'menu main main ';
-    
+    'nav nav nav'
+    'header header header'
+    'menu main main';
 }
 
 .item1 {
