@@ -1,48 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Other Projects</title>
-        <meta charset="utf-8">
-        <style>
-            @import url(pagestyle.css);
-            .grid-container {
-                display: grid;
-                grid-template-areas: 
-                'tit tit'
-                'proj desc'
-                'back back'
-                'foot foot';
-            }
-            .project {
-                grid-area: proj;
-            }
-            .description {
-                grid-area: desc;
-            }
-        </style>
 
-        <!--font stuff-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=VT323&display=swap" rel="stylesheet"> 
-    </head>
-    <body>
+<head>
+    <title>Other Projects</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(pagestyle.css);
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'tit'
+                'smash'
+                'golf'
+                'back'
+                'foot';
+        }
+
+        #miniGrid {
+            padding: 1px;
+            border: 1px solid black;
+
+            margin: 1vw;
+
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 1.5vw;
+            color: #024b08;
+
+            border: 1px #1db47a solid;
+            border-radius: 5px;
+            background-color: #1db47a;
+            padding: .5vw;
+        }
+        #miniGrid a {
+            color: #024b08;
+
+            border: 1px solid #1db47a;
+            border-radius: 5px;
+            padding: .3vw;
+        }
+        #miniGrid a:hover {
+            background-color: #024b08;
+            color: #1db47a;
+        }
+
+        .smash {
+            display: grid;
+            grid-template-areas: 'proj desc';
+            grid-template-columns: 50% 50%;
+        }
+        .golf {
+            display: grid;
+            grid-template-areas: 'proj desc';
+            grid-template-columns: 50% 50%;
+        }
+
+        .project {
+            grid-area: proj;
+            text-align: right;
+            margin-right: 1vw;
+        }
+
+        .description {
+            grid-area: desc;
+            text-align: left;
+        }
+    </style>
+
+    <!--font stuff-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-container">
         <header>
             <h1>
                 My Projects
             </h1>
         </header>
 
-        <div class="project">
-            <a href="https://horsescary.com/keysmash-generator/">
-                Keysmash Generator
-            </a>
-        </div>
-        
-        <div class="description">
-            A website that gives randomly generated keysmashes.
+        <div class="smash" id="miniGrid">
+            <div class="project">
+                <a href="https://horsescary.com/keysmash-generator/">
+                    Keysmash Generator:
+                </a>
+            </div>
+
+            <div class="description">
+                A website that randomly generates keysmashes.
+            </div>
         </div>
 
+        <div class="golf" id="miniGrid">
+            <div class="project">
+                <a href="https://github.com/HorseScary/Golf">
+                    Code Golf:
+                </a>
+            </div>
+
+            <div class="description">
+                Code golf is the art of solving programing problems in as few characters as possible. Im not that good at it but I think its fun. This is my repository where all my golfing is stored. You can try out code golf yourself at <a href="https://code.golf/">code.golf</a>
+            </div>
+        </div>
 
         <div class="back">
             <a href="../index.html">
@@ -50,10 +111,12 @@
             </a>
         </div>
         <footer>
-            <a href="http://validator.w3.org/check?uri=https://horsescary.com/pages/about.html">
+            <a href="http://validator.w3.org/check?uri=https://horsescary.com/pages/other.html">
                 <strong> HTML</strong> Valid! </a>
-                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://horsescary.com/pages/about.html">
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://horsescary.com/pages/other.html">
                 <strong> CSS</strong> Valid! </a>
         </footer>
-    </body>
+    </div>
+</body>
+
 </html>
