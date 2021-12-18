@@ -7,17 +7,7 @@
     <style>
         @import url(pagestyle.css);
 
-        .grid-container {
-            display: grid;
-            grid-template-areas:
-                'tit'
-                'smash'
-                'golf'
-                'back'
-                'foot';
-        }
-
-        #miniGrid {
+        .miniGrid {
             padding: 1px;
             border: 1px solid black;
 
@@ -44,12 +34,7 @@
             color: #1db47a;
         }
 
-        .smash {
-            display: grid;
-            grid-template-areas: 'proj desc';
-            grid-template-columns: 50% 50%;
-        }
-        .golf {
+        .smash, .golf, .rand {
             display: grid;
             grid-template-areas: 'proj desc';
             grid-template-columns: 50% 50%;
@@ -74,7 +59,7 @@
 </head>
 
 <body>
-    <div class="grid-container">
+    <div>
         <header>
             <h1>
                 My Projects
@@ -105,10 +90,10 @@
             </div>
         </div>
         
-        <div class="rand minigrid">
+        <div class="rand miniGrid">
             <div class="project">
                 <a href="https://www.horsescary.com/testing-or-something">
-                    Testing or Something
+                    Testing or Something:
                 </a>
             </div>
 
