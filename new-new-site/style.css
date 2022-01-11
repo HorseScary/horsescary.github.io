@@ -1,21 +1,74 @@
-html {
-    font-size: 1.5rem;
+body {
+    background-color: #00fa9a;
 }
 
 header h1 {
     text-align: center;
+    font-size: 8rem;
+
+    font-family: 'VT323', monospace;
 }
 
 nav {
-    position: fixed;
-    vertical-align: middle;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+
     text-align: center;
 
-    margin-top: auto;
-    margin-bottom: auto;
+}
+nav .grid-item {
+    font-size: 2.5rem;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
+}
+.grid-item a {
+    padding: 10px;
+    text-decoration: none;
+    color: #024b08;
+
+    border: 1px #1db47a solid;
+    border-radius: 30px;
+    background-color: #1db47a;
+}
+.grid-item a:hover {
+    background-color: #024b08;
+    color: #1db47a;
 }
 
 footer {
     position:fixed;
     bottom: 0;    
+}
+footer a{
+    padding-right: 5px;
+
+    border: 1px solid #20b2aa;
+    border-radius: 5px;
+
+    padding: .2vw;
+    margin: .2vw;
+
+    text-decoration: none;
+
+    background-color: #20b2aa;
+    color: #ffffff;
+}
+footer a strong {
+    font-weight: bold;
+
+    padding: 0.1vw;
+
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    color: #20b2aa;
+}
+footer a:hover {
+    background-color: #ffffff;
+    color: #20b2aa;
+}
+footer a:hover strong {
+    background-color: #20b2aa;
+    color: #ffffff;
 }
