@@ -1,8 +1,16 @@
-nav {
+.grid-container {
     grid-template-rows: repeat(3, 33%);
-    margin-top: 10vh;
+    grid-gap: 8vh;
+}
+.grid-item a{
+    margin-bottom: 20vh;
+    font-size: 8vw;
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
 footer {
     text-align: center;
+    position: static;
+    padding-top: 10vh;
 }

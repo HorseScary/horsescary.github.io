@@ -9,13 +9,13 @@ header h1 {
     font-family: 'VT323', monospace;
 }
 
-nav {
+.grid-container {
     display: grid;
 
     text-align: center;
 
 }
-nav .grid-item {
+.grid-container .grid-item {
     font-size: 2.5rem;
     font-family: 'Fjalla One', sans-serif;
     font-weight: bold;
