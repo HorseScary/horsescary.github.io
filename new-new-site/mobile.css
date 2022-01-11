@@ -1,0 +1,8 @@
+nav {
+    grid-template-rows: repeat(3, 33%);
+    margin-top: 10vh;
+}
+
+footer {
+    text-align: center;
+}
