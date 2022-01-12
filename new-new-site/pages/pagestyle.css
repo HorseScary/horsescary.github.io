@@ -7,16 +7,36 @@ main ul {
     grid-template-columns: repeat(2, 50%);
 
     grid-gap: 5px;
+
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.3rem;
+
+    background-color: #1db47a;
+    color: #024b08;
+    
+    border: #1db47a 1px solid;
+    border-radius: 20px;
+    
+    text-decoration: none;
+
+    padding: 5px;
+    margin: 5px;
 }
 .link {
     grid-area: link;
     text-align: right;
+}
+.link > a {
+   background-color: #1db47a; 
+   color: #024b08;
+}
+.link > a:hover {
+    background-color: #024b08;
+    color: #1db47a;
 
-    background-color: #1db47a;
-    border: #1db47a 1px solid;
-    border-radius: 30px;
-
-    color: #024b08;
+    border: solid 1px #1db47a;
+    border-radius: 20px;
+    padding: 5px;
 }
 .description {
     grid-area: description;
