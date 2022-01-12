@@ -1,6 +1,8 @@
 body {
     background-color: #00fa9a;
     color: #024b08;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.3rem;
 }
 
 header h1 {
@@ -24,6 +26,8 @@ header h1 {
 }
 .grid-item a {
     padding: 10px;
+    padding-right: 4vw;
+    padding-left: 4vw;
     text-decoration: none;
     color: #024b08;
 

@@ -1,15 +1,41 @@
-main ul {
-    list-style: none;
+body {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.3rem;
+    color: #024b08;
 }
+
+.flex-container {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: wrap;
+}
+.flex-item {
+    flex: 1 1 auto;
+    margin-bottom: 3vh;
+}
+.flex-item a {
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    border: 1px solid #1db47a;
+    border-radius: 20px;
+    background-color: #1db47a;
+    color: #024b08; 
+    
+    margin: 5px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 .proj {
     display: grid;
     grid-template-areas: 'link description';
     grid-template-columns: repeat(2, 50%);
 
     grid-gap: 5px;
-
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.3rem;
 
     background-color: #1db47a;
     color: #024b08;
