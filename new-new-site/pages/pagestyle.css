@@ -4,6 +4,15 @@ body {
     color: #024b08;
 }
 
+.nav a {
+    background-color: #20b2aa;
+    color: #ffffff;
+}
+.nav a:hover {
+    background-color: #ffffff;
+    color: #20b2aa;
+}
+
 .flex-container {
     margin-right: auto;
     margin-left: auto;
