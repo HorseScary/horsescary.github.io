@@ -1,76 +1,49 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <title>HorseScary</title>
-        <meta charset="utf-8">
-        <meta name="description" content="Honse">
 
-       <!--Essential meta tags?--> 
-        <meta property="og:title" content="Honse">
-        <meta property="og:site_name" content="HorseScary">
-        <meta property="og:description" content="HorseScary's cool and epic website.">
-        <meta property="og:type" content="article">
-        <meta property="og:image" content="https://c.tenor.com/2go__Sq_LiwAAAAd/horse-plinko.gif">
-        <meta property="og:url" content="https://horsescary.com/">
-        <meta name="twitter:image" content="https://c.tenor.com/2go__Sq_LiwAAAAd/horse-plinko.gif">
-
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="utf-8">
+    <title>HorseScary</title>
+    <style id="style">
+        @import url(style.css);
+    </style>
 
     <!--Font stuff-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=VT323&display=swap" rel="stylesheet"> 
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=VT323&display=swap" rel="stylesheet">
 
-    <body>
+    <!--javascript shit-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="mobile.js"></script>
+</head>
+
+<body>
+    <container>
+        <header>
+            <h1>HorseScary</h1>
+        </header>
+
         <div class="grid-container">
-            <header>
-                <h1>HorseScary</h1>
-            </header>
-
-            <div class="about">
-                <a href="pages/about.html">
-                    About Me
-                </a>
+            <div class="grid-item">
+                <a href="pages/about.html">About</a>
             </div>
-
-            <div class="youtube">
-                <a href="https://www.youtube.com/channel/UCDsjMp9ro_tPDirSQt5gtGA" target="_blank">
-                    YouTube
-                </a>
+            <div class="grid-item">
+                <a href="pages/projects.html">Projects</a>
             </div>
-
-            <div class="tiktok">
-                <a href="https://www.tiktok.com/@horsescary?lang=en" target="_blank">
-                    TikTok
-                </a>
+            <div class="grid-item">
+                <a href="pages/social.html">Socials</a>
             </div>
-
-            <div class="tumblr">
-                <a href="pages/tumblr.html">
-                    Tumblr
-                </a>
-            </div>
-
-            <div class="github">
-                <a href="https://github.com/HorseScary" target="_blank">
-                    GitHub
-                </a>
-            </div>
-
-            <div class="other">
-                <a href="pages/other.html">
-                    Other Projects
-                </a>
-            </div>
-
-            <footer>
-                <a href="http://validator.w3.org/check?uri=https://horsescary.com/">
-                    <strong> HTML</strong> Valid! </a>
-                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://horsescary.com/">
-                    <strong> CSS</strong> Valid! </a>
-            </footer>
         </div>
-    </body>
+
+        <footer>
+            <a href="https://github.com/HorseScary/horsescary.github.io">Website Repo</a>
+            <a href="http://validator.w3.org/check?uri=https://horsescary.com/">
+                <strong> HTML</strong> Valid! </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://horsescary.com/">
+                <strong> CSS</strong> Valid! </a>
+        </footer>
+    </container>
+</body>
+
 </html>

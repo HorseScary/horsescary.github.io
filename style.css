@@ -1,106 +1,52 @@
-/* How many fucking stylesheets does one girl need??? */
-
 body {
-    border: 1px black solid;
-    padding: 4vw;
-    margin: 4vw;
     background-color: #00fa9a;
+    color: #024b08;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.3rem;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 8rem;
+
+    font-family: 'VT323', monospace;
 }
 
 .grid-container {
     display: grid;
-    grid-template-areas: 
-    'tit tit tit tit tit'
-    'abt you tik tum git'
-    'owo oth oth oth uwu'
-    'foot foot foot foot foot';
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
 
-header {
-    grid-area: tit;
     text-align: center;
-    color: #024b08;
-}
-header > h1 {
-    font-size: 15vw;
-    font-family: 'VT323', monospace;
-}
 
-.about {
-    grid-area: abt;
 }
-.youtube {
-    grid-area: you;
-}
-.tiktok {
-    grid-area: tik;
-}
-.tumblr {
-    grid-area: tum;
-}
-.github {
-    grid-area: git;
-}
-.other {
-    grid-area: oth;
-    margin: 3vw;
-
+.grid-container .grid-item {
+    font-size: 2.5rem;
     font-family: 'Fjalla One', sans-serif;
-    text-align: center;
+    font-weight: bold;
+
 }
-.other > a {
+.grid-item a {
+    padding: 10px;
+    padding-right: 4vw;
+    padding-left: 4vw;
     text-decoration: none;
-    font-size: 2vw;
-    color: #024b08;
-
-    border: 1px solid #1db47a;
-    border-radius: 5px;
-    background-color: #1db47a;
-    
-    padding-left: 7vw;
-    padding-right: 7vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-}
-
-.about, .youtube, .tiktok, .tumblr, .github {
-    margin: 1vw;
-
-    font-family: 'Fjalla One', sans-serif;
-    text-align: center;
-}
-.about > a, .youtube > a, .tiktok > a, .tumblr > a, .github > a {
-    text-decoration: none;
-    font-size: 2vw;
     color: #024b08;
 
     border: 1px #1db47a solid;
-    border-radius: 5px;
+    border-radius: 30px;
     background-color: #1db47a;
-
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
 }
-.about a:hover, .youtube a:hover, .tiktok a:hover, .tumblr a:hover, .github a:hover, .other a:hover {
+.grid-item a:hover {
     background-color: #024b08;
     color: #1db47a;
 }
 
-
-
 footer {
-    grid-area: foot;
-    text-align: center;
-    font-size: 1vw;
-
-    margin-top: 10vh;
-    font-family: 'Fjalla One', sans-serif;
-
+    position:fixed;
+    bottom: 0;    
 }
-footer a {
+footer a{
+    padding-right: 5px;
+
     border: 1px solid #20b2aa;
     border-radius: 5px;
 
