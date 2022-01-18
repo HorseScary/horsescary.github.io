@@ -60,6 +60,18 @@ nav a:hover {
     text-align: center;
 }
 
+#about-container {
+    background-color: #1db47a;
+    border: 1px solid #1db47a;
+    color: #024b08;
+    border-radius: 30px;
+    
+    text-align: center;
+    padding: 1vw;
+    margin-right: 10vw;
+    margin-left: 10vw; 
+}
+
 .proj {
     display: grid;
     grid-template-areas: 'link description';
