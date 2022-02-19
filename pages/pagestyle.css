@@ -72,13 +72,10 @@ nav a:hover {
     margin-left: 10vw; 
 }
 
-.proj {
-    display: grid;
-    grid-template-areas: 'link description';
-    grid-template-columns: repeat(2, 50%);
-
-    grid-gap: 5px;
-
+#projects {
+    list-style: none;
+}
+#projects > li {
     background-color: #1db47a;
     color: #024b08;
     
@@ -87,12 +84,11 @@ nav a:hover {
     
     text-decoration: none;
 
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
 }
 .link {
-    grid-area: link;
-    text-align: right;
+    font-weight: bold;
 }
 .link > a {
    background-color: #1db47a; 
@@ -105,8 +101,4 @@ nav a:hover {
     border: solid 1px #1db47a;
     border-radius: 20px;
     padding: 5px;
-}
-.description {
-    grid-area: description;
-    text-align: left;
 }
