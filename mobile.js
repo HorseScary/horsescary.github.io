@@ -1,4 +1,3 @@
-
 window.onload = function() {
     //check variable is set to true if site is opened on mobile (probably)
     let check = false;
@@ -10,4 +9,4 @@ window.onload = function() {
     else {
         document.getElementById("style").innerHTML += "@import url(desktop.css);"
     }
- }
+}
