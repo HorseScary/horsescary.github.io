@@ -1,0 +1,114 @@
+body {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.3rem;
+    color: #024b08;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 30px;
+
+        a {
+
+        border: 1px solid #20b2aa;
+        border-radius: 20px;
+
+        padding: 5px;
+        padding-right: 3vw;
+        padding-left: 3vw;
+        
+        background-color: #20b2aa;
+        color: #ffffff;
+
+        :hover {
+            background-color: #ffffff;
+            color: #20b2aa;
+            border: 1px solid #ffffff;
+        }
+    }
+}
+
+.flex-container {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: wrap;
+}
+
+.flex-item {
+    flex: 1 1 auto;
+    margin-bottom: 5vh;
+
+    a {
+        font-size: 1.5rem;
+        text-decoration: none;
+
+        border: 1px solid #1db47a;
+        border-radius: 20px;
+
+        background-color: #1db47a;
+        color: #024b08; 
+        
+        margin: 5px;
+        padding: 5px;
+        padding-right: 3vw;
+        padding-left: 3vw;
+
+        :hover {
+            background-color: #024b08;
+            color: #1db47a;
+        }
+    }
+}
+
+#discord {
+    text-align: center;
+}
+
+#about-container {
+    background-color: #1db47a;
+    border: 1px solid #1db47a;
+    color: #024b08;
+    border-radius: 30px;
+    
+    text-align: center;
+    padding: 1vw;
+    margin-right: 10vw;
+    margin-left: 10vw; 
+}
+
+#projects {
+    list-style: none;
+
+    > li {
+        background-color: #1db47a;
+        color: #024b08;
+        
+        border: #1db47a 1px solid;
+        border-radius: 20px;
+        
+        text-decoration: none;
+
+        padding: 10px;
+        margin: 5px;
+    }
+}
+
+.link {
+    font-weight: bold;
+
+    > a {
+        background-color: #1db47a; 
+        color: #024b08;
+
+        :hover {
+            background-color: #024b08;
+            color: #1db47a;
+
+            border: solid 1px #1db47a;
+            border-radius: 20px;
+            padding: 5px;
+            }
+    }
+}

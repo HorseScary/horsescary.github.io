@@ -1,104 +1,110 @@
 body {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.3rem;
-    color: #024b08;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.3rem;
+  color: #024b08;
 }
+
 nav {
-    text-align: center;
-    padding-bottom: 30px;
+  text-align: center;
+  padding-bottom: 30px;
 }
+
 nav a {
-
-    border: 1px solid #20b2aa;
-    border-radius: 20px;
-
-    padding: 5px;
-    padding-right: 3vw;
-    padding-left: 3vw;
-    
-    background-color: #20b2aa;
-    color: #ffffff;
+  border: 1px solid #20b2aa;
+  border-radius: 20px;
+  padding: 5px;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  background-color: #20b2aa;
+  color: #ffffff;
 }
-nav a:hover {
-    background-color: #ffffff;
-    color: #20b2aa;
-    border: 1px solid #ffffff;
+
+nav a :hover {
+  background-color: #ffffff;
+  color: #20b2aa;
+  border: 1px solid #ffffff;
 }
 
 .flex-container {
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
 }
+
 .flex-item {
-    flex: 1 1 auto;
-    margin-bottom: 5vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-bottom: 5vh;
 }
+
 .flex-item a {
-    font-size: 1.5rem;
-    text-decoration: none;
-
-    border: 1px solid #1db47a;
-    border-radius: 20px;
-
-    background-color: #1db47a;
-    color: #024b08; 
-    
-    margin: 5px;
-    padding: 5px;
-    padding-right: 3vw;
-    padding-left: 3vw;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: 1px solid #1db47a;
+  border-radius: 20px;
+  background-color: #1db47a;
+  color: #024b08;
+  margin: 5px;
+  padding: 5px;
+  padding-right: 3vw;
+  padding-left: 3vw;
 }
-.flex-item a:hover {
-    background-color: #024b08;
-    color: #1db47a;
+
+.flex-item a :hover {
+  background-color: #024b08;
+  color: #1db47a;
 }
 
 #discord {
-    text-align: center;
+  text-align: center;
 }
 
 #about-container {
-    background-color: #1db47a;
-    border: 1px solid #1db47a;
-    color: #024b08;
-    border-radius: 30px;
-    
-    text-align: center;
-    padding: 1vw;
-    margin-right: 10vw;
-    margin-left: 10vw; 
+  background-color: #1db47a;
+  border: 1px solid #1db47a;
+  color: #024b08;
+  border-radius: 30px;
+  text-align: center;
+  padding: 1vw;
+  margin-right: 10vw;
+  margin-left: 10vw;
 }
 
 #projects {
-    list-style: none;
+  list-style: none;
 }
+
 #projects > li {
-    background-color: #1db47a;
-    color: #024b08;
-    
-    border: #1db47a 1px solid;
-    border-radius: 20px;
-    
-    text-decoration: none;
-
-    padding: 10px;
-    margin: 5px;
+  background-color: #1db47a;
+  color: #024b08;
+  border: #1db47a 1px solid;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
 }
+
 .link {
-    font-weight: bold;
+  font-weight: bold;
 }
-.link > a {
-   background-color: #1db47a; 
-   color: #024b08;
-}
-.link > a:hover {
-    background-color: #024b08;
-    color: #1db47a;
 
-    border: solid 1px #1db47a;
-    border-radius: 20px;
-    padding: 5px;
+.link > a {
+  background-color: #1db47a;
+  color: #024b08;
+}
+
+.link > a :hover {
+  background-color: #024b08;
+  color: #1db47a;
+  border: solid 1px #1db47a;
+  border-radius: 20px;
+  padding: 5px;
 }
