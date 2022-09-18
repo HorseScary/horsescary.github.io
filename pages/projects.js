@@ -20,9 +20,11 @@ window.onload = function() {
 
         div = document.createElement("div")
         div.setAttribute("class", "link")
+    
+        link = item[0]
 
         item[0].parentNode.insertAdjacentElement("afterbegin", div)
-        div.insertAdjacentElement("afterbegin", item[0])
+        div.insertAdjacentElement("afterbegin", link)
         
         
         item[1].setAttribute("class", "description")
