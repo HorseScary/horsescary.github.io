@@ -78,7 +78,7 @@ nav {
     margin-left: 10vw; 
 }
 
-#projects {
+.projects {
     list-style: none;
 
     > li {
@@ -111,4 +111,8 @@ nav {
             padding: 5px;
             }
     }
+}
+
+.subheading {
+    text-align: center;
 }

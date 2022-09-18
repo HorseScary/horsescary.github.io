@@ -78,11 +78,11 @@ nav a :hover {
   margin-left: 10vw;
 }
 
-#projects {
+.projects {
   list-style: none;
 }
 
-#projects > li {
+.projects > li {
   background-color: #1db47a;
   color: #024b08;
   border: #1db47a 1px solid;
@@ -107,4 +107,8 @@ nav a :hover {
   border: solid 1px #1db47a;
   border-radius: 20px;
   padding: 5px;
+}
+
+.subheading {
+  text-align: center;
 }
