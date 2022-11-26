@@ -1,0 +1,107 @@
+$background: #00fa9a;
+$item-background: #1db47a;
+$text-color: #024b08;
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: $background;
+    color: $text-color;
+    font-size: 1.3rem;
+
+    padding: 0;
+    margin: 0 0 3rem;
+
+    font-family: 'Fjalla One', sans-serif;
+}
+
+header {
+    h1 {
+        text-align: center;
+        font-size: 8rem;
+
+        font-family: 'VT323', monospace;
+    }
+}
+
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+
+    text-align: center;
+
+    .grid-item {
+
+        flex: 1 0 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+
+        padding: 2rem;
+
+        a {
+            text-decoration: none;
+            color: $text-color;
+
+            padding: 1rem 4rem;
+            margin: 1rem 4rem;
+            border-radius: 2rem;
+
+            background-color: $item-background;
+
+        }
+
+        a:hover {
+            background-color: $text-color;
+            color: $item-background;
+        }
+    }
+}
+
+$footer-background: #20b2aa;
+$footer-text: #ffffff;
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    padding: 0 1rem;
+
+    a {
+        text-decoration: none;
+
+        margin: .5rem 1rem 0 0;
+        padding: .3rem .3rem 0 .3rem;
+
+        background-color: $footer-background;
+        color: $footer-text;
+
+        border-radius: .5rem .5rem 0 0;
+
+        strong {
+            font-weight: bold;
+
+            background-color: $footer-text;
+            color: $footer-background;
+            padding: .1rem .1rem 0 .1rem;
+
+            border-radius: .5rem .5rem 0 0;
+        }
+    }
+
+    a:hover {
+        background-color: $footer-text;
+        color: $footer-background;
+
+        strong {
+            background-color: $footer-background;
+            color: $footer-text;
+        }
+    }
+}

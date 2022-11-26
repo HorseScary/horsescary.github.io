@@ -34,14 +34,14 @@ nav a :hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: wrap;
-  flex-direction: wrap;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
 }
 
 .flex-item {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   margin-bottom: 5vh;
 }
 
@@ -82,7 +82,7 @@ nav a :hover {
   list-style: none;
 }
 
-.projects>li {
+.projects > li {
   background-color: #1db47a;
   color: #024b08;
   border: #1db47a 1px solid;
@@ -96,12 +96,12 @@ nav a :hover {
   font-weight: bold;
 }
 
-.link>a {
+.link > a {
   background-color: #1db47a;
   color: #024b08;
 }
 
-.link>a :hover {
+.link > a :hover {
   background-color: #024b08;
   color: #1db47a;
   border: solid 1px #1db47a;
@@ -111,5 +111,4 @@ nav a :hover {
 
 .subheading {
   text-align: center;
-  margin: 1rem;
 }

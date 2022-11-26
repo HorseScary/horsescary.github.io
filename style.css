@@ -1,102 +1,94 @@
 html {
-    min-height: 100%;
-    position: relative;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
-    background-color: #00fa9a;
-    color: #024b08;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.3rem;
-
-    padding: 0;
-    margin: 0;
-    margin-bottom: 3rem;
+  background-color: #00fa9a;
+  color: #024b08;
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0 0 3rem;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 8rem;
-
-    font-family: 'VT323', monospace;
+  text-align: center;
+  font-size: 8rem;
+  font-family: 'VT323', monospace;
 }
 
 .grid-container {
-    display: grid;
-
-    text-align: center;
-
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  text-align: center;
 }
 
 .grid-container .grid-item {
-    font-size: 2.5rem;
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: bold;
-
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2rem;
 }
 
-.grid-item a {
-    padding: 10px;
-    padding-right: 4vw;
-    padding-left: 4vw;
-    text-decoration: none;
-    color: #024b08;
-
-    border: 1px #1db47a solid;
-    border-radius: 30px;
-    background-color: #1db47a;
+.grid-container .grid-item a {
+  text-decoration: none;
+  color: #024b08;
+  padding: 1rem 4rem;
+  margin: 1rem 4rem;
+  border-radius: 2rem;
+  background-color: #1db47a;
 }
 
-.grid-item a:hover {
-    background-color: #024b08;
-    color: #1db47a;
+.grid-container .grid-item a:hover {
+  background-color: #024b08;
+  color: #1db47a;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0 1rem;
 }
 
 footer a {
-    padding-right: 5px;
-
-    border: 1px solid #20b2aa;
-    border-bottom-width: 0;
-    border-radius: 5px 5px 0 0;
-
-
-    padding: .2vw;
-    padding-bottom: 0;
-    margin: .2vw;
-    margin-bottom: 0;
-    text-decoration: none;
-
-    background-color: #20b2aa;
-    color: #ffffff;
+  text-decoration: none;
+  margin: .5rem 1rem 0 0;
+  padding: .3rem .3rem 0 .3rem;
+  background-color: #20b2aa;
+  color: #ffffff;
+  border-radius: .5rem .5rem 0 0;
 }
 
 footer a strong {
-    font-weight: bold;
-
-    padding: 0.1vw;
-    padding-bottom: 0;
-
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-
-    background-color: #ffffff;
-    color: #20b2aa;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #20b2aa;
+  padding: .1rem .1rem 0 .1rem;
+  border-radius: .5rem .5rem 0 0;
 }
 
 footer a:hover {
-    background-color: #ffffff;
-    color: #20b2aa;
+  background-color: #ffffff;
+  color: #20b2aa;
 }
 
 footer a:hover strong {
-    background-color: #20b2aa;
-    color: #ffffff;
+  background-color: #20b2aa;
+  color: #ffffff;
 }
